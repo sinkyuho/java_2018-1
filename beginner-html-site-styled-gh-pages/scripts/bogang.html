@@ -5,12 +5,20 @@
 </head>
 <body>
   <script>
-     var a = 'abc';
-     var b = a.toUpperCase();
-     var size = b.length;
-     alert(b + "with size = " + size);
+      var a = ['a', 'b', 'c', 'd'];
+        var size= a.length
+        var c = a[1];
+        a.unshift('zero');
+       
+        //a.push('tiger');
+        //a.concat(['x', 'y', 'z']);
+        //alert(a + '\n' + size + '\n' + c);
+        a.sort();
+        alert(a);
 
-      //소문자 -> 대문자, 문자 사이즈
+
+      //  배열 설명은 교수님 페이지에!!
+      //  https://sites.google.com/site/yongheuicho/class/cloud
   </script>
 </body>
 </html>

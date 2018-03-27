@@ -1,8 +1,10 @@
 var myHeading = document.querySelector('h1');
-myHeading.innerHTML = 'Cloud Service';
-/*function getIdpw(){
+var id = localStorage.getItem('id');
+myHeading.innerHTML = 'Cloud Service'+id;
+function getIdpw(){
 var ID = prompt('ID 입력',' ');
 alert(ID+ '가 로그인함.') ;
+localStorage.getItem('id', id);
 var pss = '1234' ;
 var pw = prompt('pw 입력',' ');
 if (pw === pss) 
@@ -10,11 +12,6 @@ if (pw === pss)
    else 
     alert('RETURN');    
 }
-getIdpw();
-
-document.querySelector('h1').onclick = function(){
-    getIdpw();
-} */
 
 var myImage = document.querySelector('img');
 myImage.onclick = function()  {
@@ -23,6 +20,14 @@ myImage.onclick = function()  {
       myImage.setAttribute ('src','images/firefox-icon2.png');
      else 
       myImage.setAttribute ('src','images/firefox-icon.png');
-}
+} 
 
 //그림클릭 사진변경
+
+var but = document.querySelector('button');
+but.onclick=function() {
+   getIdpw();
+}
+
+
+//버튼+이벤트설정

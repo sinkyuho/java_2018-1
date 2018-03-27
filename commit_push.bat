@@ -1,3 +1,3 @@
 git add --all
-git commit -m "[2017-03-28] Test.js(객체)"
+git commit -m "[2017-03-28] Test.js(마지막!!)"
 git push -u origin master

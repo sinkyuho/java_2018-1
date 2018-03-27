@@ -5,13 +5,16 @@
 </head>
 <body>
   <script>
-    var a = {'x': 10, 'y': 20, 'z': 30};
-    var c =  new Object();
-    var d = {};
-    //alert(a.x);
-    a.a = 'abc';
+    function myFun(arg1, arg2){
+        alert(arguments.length);
+        return arg1 + arg2;
+    }
+    var a = myFun('abc', 'xyz', '123');
+    alert("fun # = " + myFun.length);
 
-      //  배열 설명은 교수님 페이지에!!
+
+
+    //오늘 수업내용 java는 쿨하다!!(나같은 사람이 사용하기 좋음)
   </script>
 </body>
 </html>

@@ -6,32 +6,23 @@
 <body>
   This is test 입니다!
   <script>
-   /* let a = 10; //데이터 선언
-    a.x = 10;
-    let myObj = {a: 10, b: 20, c:30};  //객체선언
-    myObj.a = 3;
-    myObj.b = 20;
-    myObj.c = 30;
-    delete myObj.c; //제거 명령
-    for (key in myObj) {
-    document.write('key: ' + key +' => '+ myObj[key] + '<br');
+  
+    function Human() {}
+    Human.prototype.name = '정통';
+    Human.prototype.gender = '남자/여자';
+    function Korea() {
     }
+    Korean.prototype = new Human();
+    Korean.prototype = name = '정통2';
+    function Deajeon() {}
+    Deajeon.prototype = new Korean();
+    let korea = new Korean();
+    let human = new Human();
+    console.log(human.name);
+    console.log(korea.name);
+    var person = new Korean();
+    alert(person.name);
 
-const{ PI } = Math; //객체 초기화 {}이거차이
-const PI = Math.PI; //변수 초기화
-console.log( PI );
-
-    console.log(myObj);   //불러오는 방법2
-    console.log(myObj['a']); //불러오기 방법2*/
-/* let myFun = function addStr(s1, s2) {
-  return s1 +s2;
-};
-let myVar = myFun('abc', '123');
-console.log(MSAppAsyncOperation); */
-
-function Constructor() {}
-
-var myObject = new Constructor();
 
   </script>
 </body>

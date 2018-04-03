@@ -6,15 +6,16 @@
 <body>
   <script>
     function myFun(arg1, arg2){
-        alert(arguments.length);
+        alert("arg # = " + myFun.length);
         return arg1 + arg2;
     }
-    var a = myFun('abc', 'xyz', '123');
-    alert("fun # = " + myFun.length);
+    
+    if(this === window) 
 
 
 
-    //오늘 수업내용 java는 쿨하다!!(나같은 사람이 사용하기 좋음)
+    // 오늘 수업내용 java는 쿨하다!!(나같은 사람이 사용하기 좋음)
+    // 모를떄는 콘솔에 검색 ㄱㄱ
   </script>
 </body>
 </html>
